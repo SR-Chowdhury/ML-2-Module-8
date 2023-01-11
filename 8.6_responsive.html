@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML-2 | Module 8 - Responsive breakpoint</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 10px;
+        }
+        .single-div {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        @media screen and (max-width: 575.98px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (min-width: 576px) and (max-width: 767.98px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Breakpoint</h1>
+    <p>
+        <ul>
+            <li> // X-Small devices (portrait phones, less than 576px) <br>@media (max-width: 575.98px) { ... }</li>
+            <li>// Small devices (landscape phones, less than 768px) <br>@media (max-width: 767.98px) { ... }</li>
+            <li>// Medium devices (tablets, less than 992px) <br>@media (max-width: 991.98px) { ... }</li>
+            <li>// Large devices (desktops, less than 1200px) <br>@media (max-width: 1199.98px) { ... }</li>
+            <li>// X-Large devices (large desktops, less than 1400px) <br>@media (max-width: 1399.98px) { ... }</li>
+        </ul>       
+    </p>
+    <div class="container">
+        <div class="single-div">
+            <img src="./img/laptop.jpg" alt="">
+            <h3></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut temporibus, in fuga obcaecati tenetur rerum nulla magnam, neque corporis placeat deserunt esse porro quisquam ut dolorem, saepe dolores similique.</p>
+            <button>Add to Chart</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/laptop.jpg" alt="">
+            <h3></h3>
+            <p>Laborum recusandae quas eaque ab id aut deleniti, a architecto saepe deserunt labore consequatur et repellat sequi, corrupti at? Voluptas ad natus asperiores vel, rerum quidem quae recusandae iure nemo?</p>
+            <button>Add to Chart</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/laptop.jpg" alt="">
+            <h3></h3>
+            <p>Quam blanditiis magni alias magnam, voluptas culpa architecto illo consequatur incidunt, deserunt ducimus, cum repudiandae temporibus molestiae! Aliquam odit enim odio eligendi. Tempore voluptas voluptatum maxime animi dolores, est aliquid!</p>
+            <button>Add to Chart</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/laptop.jpg" alt="">
+            <h3></h3>
+            <p>Doloribus, asperiores deserunt sapiente ab qui quos assumenda modi exercitationem? Perspiciatis consequatur similique assumenda veritatis natus illo iure dignissimos cupiditate blanditiis? Nam dolor qui beatae iste quasi eum esse ullam!</p>
+            <button>Add to Chart</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/laptop.jpg" alt="">
+            <h3></h3>
+            <p>Cupiditate ipsa debitis deserunt officia atque! Ipsum iusto consequuntur impedit alias doloribus repellendus eius. Animi dolorum non vel porro, magni, autem a, quae veritatis hic natus quidem sed eius aut?</p>
+            <button>Add to Chart</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/laptop.jpg" alt="">
+            <h3></h3>
+            <p>Unde aspernatur iste sint alias, vel laboriosam corporis ipsum saepe officia itaque, dolore culpa, optio expedita est nemo perspiciatis quidem voluptatibus deserunt quaerat quasi hic? Ex ipsa laboriosam dolorem dicta.</p>
+            <button>Add to Chart</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/laptop.jpg" alt="">
+            <h3></h3>
+            <p>Quibusdam, quo. Voluptatum facilis maiores eveniet iste itaque, consequuntur quisquam deleniti at unde eligendi atque necessitatibus. Impedit aut ipsam, quia maiores deleniti ut minus vitae veniam quos qui perferendis ratione.</p>
+            <button>Add to Chart</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/laptop.jpg" alt="">
+            <h3></h3>
+            <p>Illum, repellendus ullam ducimus libero eveniet veritatis sapiente harum provident consequuntur soluta fuga enim quam odio neque dolor? Ex nobis aliquid placeat possimus cumque ratione ullam ducimus voluptas sed voluptates.</p>
+            <button>Add to Chart</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/laptop.jpg" alt="">
+            <h3></h3>
+            <p>Excepturi, at! Voluptates, saepe doloremque nulla alias dignissimos, quae ducimus atque cupiditate similique unde optio ab ut eius inventore? Quos consequatur voluptates cumque nisi amet omnis asperiores dolorem exercitationem magni.</p>
+            <button>Add to Chart</button>
+        </div>
+    </div>
+</body>
+</html>
