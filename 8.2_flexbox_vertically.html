@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML2 | Module 8</title>
+</head>
+<style>
+    .title {
+        text-align: center;
+    }
+    .container {
+        padding: 5px;
+        height: 300px;
+        border: 1px solid green;
+    }
+    .box {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid purple;
+    }
+    .ct1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .ct2 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .ct3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ct4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ct5 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ct6 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }    
+    .ct7 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .ct8 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .ct9 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .ct10 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .ct110 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    .ct11 .box2 {
+        width: 100px;
+        /* No Height, so that it will acquire full height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid purple;
+    }
+    .ct11 {
+        display: flex;
+        align-items: stretch;
+    }
+    #second-box {
+        flex-grow: 1; 
+        /* It will take full width */
+    }
+</style>
+<body>
+    <h2 class="title">display: flex; justify-content: flex-start; <strong>Horizontally & Vertically</strong></h1>
+    <div class="container ct1">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+    </div>
+    <h2 class="title">display: flex; justify-content: flex-end; <strong>Horizontally & Vertically</strong></h1>
+    <div class="container ct2">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+    </div>
+    <h2 class="title">display: flex; justify-content: center; <strong>Horizontally & Vertically</strong></h1>
+    <div class="container ct3">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+    </div>
+    <h2 class="title">display: flex; justify-content: space-between; <strong>Horizontally & Vertically</strong></h1>
+    <div class="container ct4">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+    </div>
+    <h2 class="title">display: flex; justify-content: space-around; <strong>Horizontally & Vertically</strong></h1>
+    <div class="container ct5">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+    </div>
+    <h2 class="title">display: flex; justify-content: space-evenly; <strong>Horizontally & Vertically</strong></h1>
+    <div class="container ct6">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+    </div>
+    <h2 class="title">display: flex; justify-content: space-evenly; <strong>Horizontally & Vertically & flex-direction: row-reverse</strong></h1>
+    <div class="container ct7">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+    </div>
+    <h2 class="title">display: flex; justify-content: space-evenly; <strong>Horizontally & Vertically & Flex-direction: column</strong></h1>
+    <div class="container ct8">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+    </div>
+    <h2 class="title">display: flex; justify-content: space-evenly; <strong>Horizontally & Vertically & Flex-direction: colum-reverse</strong></h1>
+    <div class="container ct9">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+    </div>
+    <h2 class="title">display: flex; <strong>flex-wrap: wrap</strong></h1>
+    <div class="container ct10">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+        <div class="box">Box - 5</div>
+        <div class="box">Box - 6</div>
+        <div class="box">Box - 7</div>
+        <div class="box">Box - 8</div>
+        <div class="box">Box - 9</div>
+        <div class="box">Box - 10</div>
+        <div class="box">Box - 11</div>
+        <div class="box">Box - 12</div>
+        <div class="box">Box - 13</div>
+        <div class="box">Box - 14</div>
+        <div class="box">Box - 15</div> 
+        <div class="box">Box - 16</div>
+        <div class="box">Box - 17</div>
+        <div class="box">Box - 18</div>
+        <div class="box">Box - 19</div>
+        <div class="box">Box - 20</div>
+        <div class="box">Box - 21</div>
+    </div>
+    <h2 class="title">display: flex; <strong>flex-wrap: wrap-reverse</strong></h1>
+    <div class="container ct110">
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+        <div class="box">Box - 5</div>
+        <div class="box">Box - 6</div>
+        <div class="box">Box - 7</div>
+        <div class="box">Box - 8</div>
+        <div class="box">Box - 9</div>
+        <div class="box">Box - 10</div>
+        <div class="box">Box - 11</div>
+        <div class="box">Box - 12</div>
+        <div class="box">Box - 13</div>
+        <div class="box">Box - 14</div>
+        <div class="box">Box - 15</div> 
+        <div class="box">Box - 16</div>
+        <div class="box">Box - 17</div>
+        <div class="box">Box - 18</div>
+        <div class="box">Box - 19</div>
+        <div class="box">Box - 20</div>
+        <div class="box">Box - 21</div>
+    </div>
+    <h2 class="title">display: flex; <strong>align-items: stretch;</strong></h1>
+    <div class="container ct11">
+        <div class="box2">Box - 1</div>
+        <div class="box2">Box - 2</div>
+    </div>
+    <h2 class="title">display: flex; <strong>flex-grow: 1; Means it will take whole width (It is responsive)</strong></h1>
+    <div class="container ct11">
+        <div id="second-box" class="box2">Box - 1</div>
+        <div class="box2">Box - 2</div>
+    </div>
+</body>
+</html>
