@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML-2 | Module 8 - 7 things need to know for responsive website</title>
+    <style>
+        /* Body max-width & margin */
+        body {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        /* CSS Relative Unit */
+        .container2 h1 {
+            font-size: 10vw;
+        }
+
+        /* Responsive Image (Fluid)  */
+        .container3 {
+            width: 50%;
+            border: 1px solid #ddd;
+        }
+
+        .container3 img {
+            width: 100%;
+        }
+
+        /* Responsive Split Screen */
+        .container4 {
+            display: flex;
+        }
+
+        .container4 .split-screen {
+            width: 50%;
+        }
+
+        .container4 .split-screen img {
+            width: 100%;
+        }
+
+        /* Multi-column */
+        .container5 {
+            margin: 20px 0px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        .single-div img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 575.98px) {
+            .container4 {
+                flex-direction: column-reverse;
+            }
+
+            .container5 {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 767.98px) {
+            .container4 {
+                flex-direction: column;
+            }
+
+            .container5 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h1>ML-2 | Module 8 - 7 things need to know for responsive website</h1>
+        <ol>
+            <li>body max-width: 1240px & margin: 0 auto;</li>
+            <li>Viewport Meta tag: The viewport is the user's visible area of a web page. </li>
+            <li>CSS Relative Unit. Example: em, rem, vw etc</li>
+            <li>Responsive Image (Fluid)</li>
+            <li>Responsive Split screen using flex & reverse column in small screen</li>
+            <li>Grid Responsive (Multi-column)</li>
+            <li>Responsive Menu (Bootstrap Responsive) - Future</li>
+        </ul>
+    </div>
+
+    <div class="container2">
+        <h1>CSS Relative Unit</h1>
+    </div>
+
+    <h1>Responsive Image (Fluid)</h1>
+    <div class="container3">
+        <div class="img-container"><img src="./img/laptop.png" alt=""></div>
+    </div>
+
+    <h1>Responsive Split screen using flex & reverse column in small screen</h1>
+    <div class="container4">
+        <div class="split-screen">
+            <img src="./img/laptop.png" alt="">
+        </div>
+        <div class="split-screen">
+            <img src="./img/Laptop-PNG-File.png" alt="">
+        </div>
+    </div>
+
+    <h1>Grid Responsive (Multi-column)</h1>
+    <div class="container5">
+        <div class="single-div">
+            <img src="./img/Laptop-PNG-File.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias fugiat dolor alias assumenda
+                voluptates repellat?</p>
+            <button>Click Me</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/Laptop-PNG-File.png" alt="">
+            <p>Dolore, vero? Optio ipsa dolores mollitia aperiam consequatur adipisci! Tenetur vitae laudantium natus ad
+                temporibus!</p>
+            <button>Click Me</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/Laptop-PNG-File.png" alt="">
+            <p>Impedit ducimus numquam minus nobis veniam illum ullam aperiam, recusandae odio distinctio maiores quos
+                debitis.</p>
+            <button>Click Me</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/Laptop-PNG-File.png" alt="">
+            <p>Modi, ipsam cupiditate enim aliquam, sit molestiae ipsum ex numquam sapiente placeat saepe unde
+                temporibus.</p>
+            <button>Click Me</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/Laptop-PNG-File.png" alt="">
+            <p>Rerum ipsam quidem aliquam voluptatem. Deleniti iste suscipit officiis saepe dolorum. Asperiores
+                doloribus reprehenderit nulla.</p>
+            <button>Click Me</button>
+        </div>
+        <div class="single-div">
+            <img src="./img/Laptop-PNG-File.png" alt="">
+            <p>Neque ex, explicabo cumque harum vitae iusto magnam quos facere maiores porro numquam nisi corrupti.</p>
+            <button>Click Me</button>
+        </div>
+    </div>
+</body>
+
+</html>
